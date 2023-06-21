@@ -40,3 +40,4 @@ class Chatgpt {
 }
 
 module.exports = { Chatgpt }
+

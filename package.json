@@ -5,7 +5,8 @@
   "scripts": {},
   "node-red": {
     "nodes": {
-      "rosegun-test": "src/portal/chatgpt.js"
+      "rosegun-test": "src/portal/chatgpt.js",
+      "rosegun": "src/portal/translate.js"
     }
   },
   "author": "phil",
