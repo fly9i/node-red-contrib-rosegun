@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    RED.nodes.registerType('chatgpt',{
+        category: 'rosegun',
+        color: '#a6bbcf',
+        defaults: {
+            token: {value:""},
+            model: {value:"gpt-3.5-turbo"},
+            apiBaseUrl: {value:"https://chat.jav.llc/v1"}
+        },
+        inputs:1,
+        outputs:2,
+        icon: "file.png",
+        label: function() {
+            return "chatgpt";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="chatgpt">
+    <div class="form-row">
+        <label for="node-input-token"><i class="fa fa-tag"></i> Token</label>
+        <input type="text" id="node-input-token" placeholder="Chatgpt Token">
+    </div>
+    <div class="form-row">
+        <label for="node-input-model"><i class="fa fa-tag"></i> Model</label>
+        <!-- <input type="select" id="node-input-model"> -->
+        <select id="node-input-model">
+            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+            <option value="gpt-3.5-turbo-0301">gpt-3.5-turbo-0301</option>
+            <option value="gpt-4">gpt-4</option>
+            <option value="gpt-4-0301">gpt-4-0301</option>
+        </select>
+        <!-- <input type="text" id="node-input-model" placeholder="Chatgpt model"> -->
+    </div>
+    <div class="form-row">
+        <label for="node-input-apiBaseUrl"><i class="fa fa-tag"></i> Request apiBaseUrl</label>
+        <input type="text" id="node-input-apiBaseUrl" placeholder="(optional) apiBaseUrl">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="test">
+    <p>输入 chatgpt api token</p>
+</script>

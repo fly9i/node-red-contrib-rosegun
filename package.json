@@ -1,0 +1,16 @@
+{
+  "name": "node-red-contrib-rosegun",
+  "version": "1.0.18",
+  "description": "Rosegun usefull nodes",
+  "scripts": {},
+  "node-red": {
+    "nodes": {
+      "rosegun-test": "src/portal/chatgpt.js"
+    }
+  },
+  "author": "phil",
+  "license": "MIT",
+  "dependencies": {
+    "chatgpt": "^5.2.5"
+  }
+}
